@@ -33,7 +33,7 @@ setInterval(() =>{
     const ampm = hour > 12 ? 'PM' : 'AM';
 
     dateEl.innerText = `${days[day]}, ${day} ${months[month]}`
-    timeEl.innerText = `${hour}: ${minutes <10 ? `0${minutes}` : minutes} ${ampm}`
+    timeEl.innerText = `${hour}: ${minutes <10 ? `0${minutes}` : {minutes} ${ampm}`
 
     hoursEl.style.transform = `translate(-50%, -100%) rotate(${hour * 30}deg)`
     minutesEl.style.transform = `translate(-50%, -100%) rotate(${minutes * 6}deg)`
